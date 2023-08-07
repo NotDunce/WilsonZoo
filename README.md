@@ -7,3 +7,12 @@
 #Animal information
 
 <img src="https://github.com/NotDunce/WilsonZoo/assets/126876327/dca47a35-a6de-488b-8197-d7af7eb228d6" width="1500" height="600">
+
+#Company Values
+
+<img src="https://github.com/NotDunce/WilsonZoo/assets/126876327/a8ec24d5-cd15-4440-8516-a0937467ee14" width="1500" height="600">
+
+#Call to action
+
+<img src="https://github.com/NotDunce/WilsonZoo/assets/126876327/a8ec24d5-cd15-4440-8516-a0937467ee14" width="1500" height="600">
+
