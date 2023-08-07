@@ -6,14 +6,14 @@
 
 #Animal information
 
-<img src="https://github.com/NotDunce/WilsonZoo/assets/126876327/dca47a35-a6de-488b-8197-d7af7eb228d6" width="900" height="600">
+<img src="https://github.com/NotDunce/WilsonZoo/assets/126876327/dca47a35-a6de-488b-8197-d7af7eb228d6" width="1200" height="500">
 
 #Company Values
 
-<img src="https://github.com/NotDunce/WilsonZoo/assets/126876327/a8ec24d5-cd15-4440-8516-a0937467ee14" width="900" height="600">
+<img src="https://github.com/NotDunce/WilsonZoo/assets/126876327/a8ec24d5-cd15-4440-8516-a0937467ee14" width="1200" height="500">
 
 #Call to action
 
-<img src="https://github.com/NotDunce/WilsonZoo/assets/126876327/90f6a825-f643-4f86-8a43-9038248e5f97" width="900" height="600">
+<img src="https://github.com/NotDunce/WilsonZoo/assets/126876327/90f6a825-f643-4f86-8a43-9038248e5f97" width="1200" height="500">
 
 
