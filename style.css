@@ -1,0 +1,1193 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*--------------------------------home page-------------------*/
+.header{
+    min-height: 100vh;
+    width: 100%; 
+    background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.7)),url('Zoo/background.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #afd275;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #afd275;
+    background: #afd275;
+    transition: 0.5s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #2a3bd8;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*--------Course--------*/
+.container-us{
+    width: 100%;
+    background-color: #afd275;
+}
+.us{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+    
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+ 
+}
+
+
+.us-p{
+    color: #777
+}
+
+
+.us-col p{
+   
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+   
+    
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.us-col{
+    flex-basis: 31%;
+    background: #f3fff4;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.us-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+/*---------------facilities-----------*/
+.container-attr{
+    width: 100%;
+  
+}
+.attractions{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+.attractions-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+.attractions-col3{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+
+.attractions-col3 h3{
+    text-align: left;
+}
+
+.attractions-col img{
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #afd275;
+}
+
+.attractions-col3 img{
+    width: 84%;
+    border-radius: 10px;
+    border: 3px solid #afd275;
+}
+
+.attractions-col p{
+    padding: 0;
+
+}
+
+.attractions-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+
+
+
+/*---------------Footer-----------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: #afd275;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/*---------------Values---------*/
+.container-val{
+    background-color: #afd275;
+}
+.values{
+    height: 55vh;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/*---------------Call to action-----------*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('Zoo/tiger.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn::after{
+    border: 1px solid #afd275;
+    background: #afd275;
+    transition: 0.5s;
+}
+
+.hero-btn:hover::after{
+    transition: 1.5s;
+}
+
+
+
+/*---------------kids page-----------------------------*/
+.header-kids{
+    min-height: 100vh;
+    width: 100%; 
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('Zoo/45694680321_a9cef8b08b_o.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.text-box-kids{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    text-align: center;
+}
+
+.text-box-kids h1{
+    font-size: 62px;
+}
+
+.text-box-kids p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn-kids{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.hero-btn-kids:hover{
+    border: 1px solid #afd275;
+    background: #afd275;
+    transition: 0.5s;
+}
+
+.animal-help{
+    min-height: 100vh;
+}
+
+.help-text p{
+    color: black;
+}
+
+.help-text{
+    position: absolute;
+    padding-top: 5%;
+    
+    background-color: #afd275;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.help-text h1{
+    color: #fff;
+}
+
+.help-text h3{
+    color: #fff;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.help-image{
+    position: absolute;
+    padding-top: 5%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url('Zoo/48691707483_6d2f001728_o.jpg');
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+
+.help-text-p{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+}
+
+.help-text p{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.us-col-k p{
+   
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+   
+    
+}
+
+.row-k{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 30px;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-play-state: running;
+   
+}
+
+.us-col-k{
+    flex-basis: 31%;
+    background: #f3fff4;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+   
+    
+}
+
+.us-col-k h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: black;
+}
+
+.us-col-k:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+/*----------------------------Extinction------------------------------------*/
+.extinction{
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.help-text-e p{
+    color: black;
+}
+
+.help-text-e{
+    position: absolute;
+    padding-top: 5%;
+    
+    background-color: #afd275;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.help-text-e h1{
+    color: #fff;
+}
+
+.help-text-e h3{
+    color: #fff;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*----------------------------48689287562_7149393f24_o------------------------------------*/
+.help-image-e{
+    position: absolute;
+    padding-top: 5%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url('Zoo/48689287562_7149393f24_o.jpg');
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+
+.help-text-e{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    left: 50%;
+}
+
+.help-text-e p{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.us-col-e p{
+   
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-play-state: running;
+    
+}
+
+.row-e{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 30px;
+    animation-name: fadeIn;
+    animation-duration: 9s;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+
+.us-col-e{
+    flex-basis: 31%;
+    background: #f3fff4;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+   
+    
+}
+
+.us-col-e h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: black;
+}
+
+.us-col-e:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+/*----------------------------Animals------------------------------------*/
+
+.header-animals{
+    min-height: 100vh;
+    width: 100%; 
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('Zoo/45694679311_1816ee8267_o.webp');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.aotw{
+    height: 100vh;
+    background-color: #afd275;
+}
+
+.textbox-aotw{
+    position: absolute;
+    padding-top: 5%;
+    border-radius: 10px;
+    background-color: #afd275;
+    width: 50%;
+    height: 95%;
+    text-align: center;
+    
+}
+
+.aotw-image{
+    position: absolute;
+    padding-top: 5%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url('Zoo/48689287562_7149393f24_o.webp');
+    background-position: center;
+    width: 50%;
+    height: 95%;
+    left: 50%;
+    border-radius: 10px;
+}
+
+
+
+.attractions-a{
+    min-height: 90vh;
+}
+
+
+
+.textbox-aotw h1{
+    color: #fff;
+}
+
+.textbox-aotw h3{
+    color: #777;
+}
+
+.textbox-aotw p{
+    margin: 50px;
+    color: #777;
+}
+
+.animals-img{
+    width: 20%;
+}
+
+/*--------------------Bookings-------------------------*/
+.book-head{
+    min-height: 100vh;
+    width: 100%; 
+    background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.7)),url('Zoo/50351645371_afaeb34aae_o.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.header-bookings{
+    min-height: 100vh;
+    background-image: url('/Zoo/2back.jpg');
+}
+
+.text-checkout{
+    position: absolute;
+    padding-top: 5%;
+    background-color: #afd275;
+    width: 50%;
+    height: 90%;
+    text-align: center;
+}
+
+.img-container-bookings{
+    position: absolute;
+    padding-top: 5%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url('Zoo/3back.webp');
+    background-position: center;
+    width: 50%;
+    height: 90%;
+    left: 50%;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 23%;
+} 
+
+.tg{
+    width: 120%;
+}
+
+.events{
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    height: 300px;
+    width: 500px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+.events-txt{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.button-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+
+
+
+/*-----------------------------------ABOUT----------------------------------------*/
+.header2{
+    min-height: 100vh;
+    width: 100%; 
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.6)), url('Zoo/aboutback.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.text-box-about{
+    width:60%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    text-align: center;
+   
+    border-radius: 5px;
+    
+}
+
+.text-box-about h1{
+    font-size: 62px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.text-box-about p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+    
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn::after{
+    border: 1px solid #afd275;
+    background: #afd275;
+    transition: 0.5s;
+}
+
+.hero-btn:hover::after{
+    transition: 1.5s;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #2a3bd8;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*--------Us--------*/
+
+.us-about{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-size: cover;
+    background-position: center;
+   
+
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row-about{
+    position: relative;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    
+}
+@keyframes fadeIn {
+    
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference){
+      .fadeIn{
+          animation: wipe-enter 1s 1;
+      }
+  }
+
+
+.us-col-about{
+    flex-basis: 31%;
+    background: #f3fff4;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    position: relative;
+    left: 13%;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.us-col-about:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.us-col-about:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+/*---------------facilities-----------*/
+
+.people{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #afd275;
+
+}
+
+.container-about{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    color: black;
+    right: 200px;
+    top: 500px;
+}
+
+.people h1{
+    color: #fff;
+    font-size: 50px;
+    animation-name: fadeIn;
+    animation-delay: 0s;
+    animation-play-state: running;
+    position: relative;
+    width: 30%;
+    
+    border-radius: 10px;
+    margin: auto;
+    
+    height: 75%;
+}
+
+.people h1:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    
+}
+
+.people p{
+    color: #fff;
+}
+
+.people-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding-left: 30px;
+
+}
+
+.people-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.people-col p{
+    padding: 0;
+ 
+}
+
+.people-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #fff;
+}
+
+.us-col p {
+    color: rgb(0, 0, 0);
+    
+}
+
+
+/*---------------Testimonials-----------*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    height: 70vh;
+}
+
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #f3fff4;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    padding-right: 10px;
+}
+
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p{
+    padding: 0;
+}
+
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial-col .fa{
+    color: #c2cad0;
+}
+
+@media(max-width: 700px){
+
+    .testimonial-col img{
+        
+        margin-left: 0px;
+        margin-right: 15px;
+       
+    }
+
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/*---------------Call to action-----------*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('Zoo/tiger.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn::after{
+    border: 1px solid #afd275;
+    background: #afd275;
+    transition: 0.5s;
+}
+
+.hero-btn:hover::after{
+    transition: 1.5s;
+}
+/*---------------Footer-----------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: #afd275;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.findus{
+    height: 70vh;
+}
+  
+.find-box{
+    position: relative;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%);
+    text-align: center;
+      
+}
+  
+.find-box h1{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+  
+  
+.find-box p{
+    color: #afd275;
+    font-size: 25px;
+}
+  
+.address{  
+    border: 1px solid #afd275;
+    width: 30%;
+    border-radius: 10px;
+    position: relative;
+    left: 65%;
+    top: 24%;
+}
+  
+.address h1{
+    color: #afd275;
+    font-size: 35px;
+    padding: 20px;
+}
+  
+.address p{
+    color: #777;
+    font-size:15px;
+  }
+  
+.map{
+    width: 500px;
+    height: 500px;
+    border: 1.5px solid #afd275;
+    border-radius: 10px;
+    background-color: #4e4e50;
+    position: relative;
+    left: 10%;
+    bottom: 220px;
+}
+
+/*---------------prototype---------*/
+
+.middle-logo {
+    position: absolute;
+    background-image: url('/Assignment/Zoo/fulllogo.svg');
+    
+}

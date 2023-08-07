@@ -1,0 +1,1 @@
+Images can be used for educational or other non-commercial purposes and should be attributed to Z70 Photography.
