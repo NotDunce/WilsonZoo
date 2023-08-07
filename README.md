@@ -2,7 +2,7 @@
 
 #Home page - has on scroll animations
 
-<img src="https://github.com/NotDunce/WilsonZoo/assets/126876327/f81610c8-6fe5-44bc-90bc-1b41a8a30c8a" width="900" height="300">
+<img src="https://github.com/NotDunce/WilsonZoo/assets/126876327/f81610c8-6fe5-44bc-90bc-1b41a8a30c8a" width="1200" height="500">
 
 #Animal information
 
